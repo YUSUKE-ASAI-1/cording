@@ -396,5 +396,13 @@ footer nav {
 
 .zyusyo{
 	display:flex;
-	gap: 100px; 
+    justify-content: space-between;
+}
+.zyusyo li{
+    margin-right: 10px;
+}
+.zyusyo img{
+    display: inline;
+    width: 15px;
+    height: 15px;
 }

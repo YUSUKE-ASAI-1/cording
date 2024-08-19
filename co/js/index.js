@@ -1,4 +1,5 @@
 "use strict"
+
 const mySwiper = new Swiper('.swiper', {
     loop: true,
 
@@ -29,7 +30,6 @@ const mySwiper = new Swiper('.swiper', {
     },
 });
 
-"use strict"
 $(function () {
     $('#hamburger').on('click', function () {
         $('.icon').toggleClass('open');
@@ -37,7 +37,6 @@ $(function () {
     })
 })
 
-"use strict"
 $(function () {
     $('.eisei').on('click', function () {
         $('.eisei-menu').toggleClass('open');
@@ -45,7 +44,6 @@ $(function () {
     })
 })
 
-"use strict"
 $(function () {
     $('.kyo').on('click', function () {
         $('.kyo-menu').toggleClass('open');
@@ -53,7 +51,6 @@ $(function () {
     })
 })
 
-"use strict"
 $(function () {
     $('.sa').on('click', function () {
         $('sa-menu').toggleClass('open');
@@ -61,7 +58,6 @@ $(function () {
     })
 })
 
-"use strict"
 $(function () {
     $(window).scroll(function () {
         $('.samon').css({
@@ -85,7 +81,6 @@ $(function () {
     });
 });
 
-"use strict"
 $(function () {
     $(window).scroll(function () {
         $('.cofe').css({
@@ -109,7 +104,6 @@ $(function () {
     });
 });
 
-"use strict"
 $(function () {
     $(window).scroll(function () {
         $('.ofood').css({
@@ -134,7 +128,6 @@ $(function () {
     });
 });
 
-"use strict"
 $(function () {
     $(window).scroll(function () {
         $('.blackcoffee').css({
@@ -159,7 +152,6 @@ $(function () {
     });
 });
 
-"use strict"
 $(function () {
     $(window).scroll(function () {
         $('.tenpo').css({
