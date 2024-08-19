@@ -1,0 +1,408 @@
+@charset "UTF-8";
+/* reset */
+body, h1, h2, h3, h4, h5, h6, p, address,
+ul, ol, li, dl, dt, dd, img, form, table, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 100%;
+	text-align: left;
+	list-style-type: none;
+	border-collapse: collapse;
+}
+
+textarea { font-size: 100%; vertical-align:middle;}
+img { border-style: none; display: block; }
+hr { display: none; }
+em{font-style: normal}
+input{line-height:auto;vertical-align:middle;}
+strong.more{color:#c30}
+a{text-decoration: none;}
+
+
+body {
+	font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*ここから下*/
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    height: 60px;
+    width: 100%;
+    padding: 0px 15px;
+    background-color: lightgray;
+    display: flex;
+}
+
+.Casteria a {
+    color: black;
+    text-decoration: none;
+}
+
+nav {
+    margin: 0 0 0 auto;
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+}
+
+.search {
+    list-style: none;
+    padding: 10px;
+}
+
+ul a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 17px 15px 10px 10px;
+}
+
+#value {
+    border-radius: 0.1rem;
+    line-height: 2.0rem;
+    padding: 0.2rem 0rem 0.2rem 0rem;
+    border: none;
+    border-radius: 5px;
+}
+
+#button {
+    line-height: 2.2rem;
+    padding: 0.1rem 0.9rem 0.1rem 0.9rem;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+::placeholder{
+	padding-left: 1rem;
+}
+
+/**********************************　
+以下、ハンバーガーメニューの設定　
+************************************/
+@media (min-width: 901px) {
+    .sm {
+        display: none;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .pc {
+        display: none;
+    }
+
+    .bar {
+        padding: 0;
+        top: 0;
+        left: 0;
+    }
+
+    #hamburger {
+        background-color: transparent;
+        position: relative;
+        cursor: pointer;
+        margin: 0 0 0 auto;
+        height: 60px;
+        width: 60px;
+		
+    }
+
+    .icon span {
+        position: absolute;
+        left: 15px;
+        width: 30px;
+        height: 4px;
+        background-color: white;
+        border-radius: 8px;
+        transition: ease 0.75s;
+    }
+
+    .icon span:nth-of-type(1) {
+        top: 16px;
+    }
+
+    .icon span:nth-of-type(2) {
+        top: 28px;
+    }
+
+    .icon span:nth-of-type(3) {
+        bottom: 16px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .sm {
+        display: none;
+        top: 60px;
+        left: 0px;
+        position: absolute;
+        width: 100%;
+        background-color: lightgray;
+    }
+
+    ul {
+        flex-direction: column;
+    }
+
+    ul a {
+        padding: 0px 0px 15px 0px;
+    }
+
+    #value {
+        width: 15rem;
+    }
+
+    .search {
+        padding: 0px 0px 1px 1px;
+    }
+
+
+
+    .tenpo {
+        display: none;
+    }
+}
+
+
+
+.swiper {
+    /*スライダーの幅と高さを調整*/
+    width: min(100%, 1500px);
+    height: 30rem;
+	z-index: -1;
+}
+
+.swiper-slide {
+    height: auto
+}
+
+.swiper-slide img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.container-fluid {
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 1100px;
+}
+.eisei-menu {
+    background-color: #FFC7AF;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.eisei-lis {
+    display: none;
+    padding: 0;
+    top: 0;
+    left: 0;
+    margin: 0rem orem 0.1rem 0rem;
+}
+
+
+.eisei ul li:not(:first-child) {
+    margin-top: 1rem;
+}
+
+.kyo-menu {
+    background-color: #FFC7AF;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    margin-top: 0.1rem;
+}
+
+.kyo-lis {
+    display: none;
+    padding: 0;
+    top: 0;
+    left: 0;
+}
+
+.kyo ul li:not(:first-child) {
+    margin-top: 1rem;
+}
+
+.sa-menu {
+    background-color: #FFC7AF;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    margin-top: 0.1rem;
+}
+
+.sa-lis {
+    display: none;
+    padding: 0;
+    top: 0;
+    left: 0;
+}
+
+.sa ul li:not(:first-child) {
+    margin-top: 1rem;
+}
+
+.samon{
+	transition: .7s ease-in-out ;
+}
+
+.cofe{
+	transition: .7s ease-in-out ;
+}
+
+.ofood{
+	transition: .7s ease-in-out ;
+}
+
+.ryouri h2 {
+    margin: 4rem 0rem 1rem 1.5rem;
+}
+
+.fi {
+    width: 100%;
+    height: 100%;
+}
+
+.sam{
+    margin-left: 1rem;
+    font-size: 20px;
+}
+
+.co{
+    margin-left: 1rem;
+    font-size: 20px;
+}
+
+.of{
+    margin-left: 1rem;
+    font-size: 20px;
+}
+
+
+.adress h2 {
+    color: white;
+    margin: 3rem 0rem 1rem 1.5rem;
+}
+
+.adress p {
+    color: white;
+    margin-left: 1rem;
+}
+
+.week h2 {
+    color: white;
+    margin: 1rem 0rem 1rem 1.5rem;
+}
+
+.week p {
+    color: white;
+    margin-left: 1rem;
+}
+
+.barista {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+}
+
+.blackcoffee {
+    margin-top: 30px;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+	transition: .7s ease-in-out ;
+}
+
+.tenpo{
+	transition: .7s ease-in-out ;
+}
+
+.tenpo h3 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.rest2 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.rest3 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.rest4 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.rest5 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.col-md-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    height: 90px;
+    width: 100%;
+    padding: 0px 15px;
+    background-color: lightgray;
+}
+
+footer nav {
+    justify-content: center;
+}
+
+.foot2{
+    flex-direction: row;
+    justify-content: center;
+    padding-right: 2rem;
+    margin-top: 1rem;
+}
+
+.list-item {
+    margin: 0 10px; /* リスト項目間のマージンを調整 */
+    white-space: nowrap; /* テキストの改行を防ぐ */
+}
+
+.zyusyo{
+	display:flex;
+    justify-content: space-between;
+}
+.zyusyo li{
+    margin-right: 10px;
+}
+.zyusyo img{
+    display: inline;
+    width: 15px;
+    height: 15px;
+}
